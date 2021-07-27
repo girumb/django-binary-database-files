@@ -21,7 +21,7 @@ def URL_METHOD_2(name):
     """
     Construct file URL based on configured URL pattern.
     """
-    return reverse("database_file", kwargs={"name": name})
+    return reverse("binary_database_files:database_file", kwargs={"name": name})
 
 
 URL_METHODS = (
